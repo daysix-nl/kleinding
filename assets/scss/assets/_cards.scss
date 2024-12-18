@@ -1,0 +1,169 @@
+.accordion-item {
+    background-color: #FBF5DC;
+    margin-top: 7.37913486005089vw;
+
+    &:nth-child(odd) {
+        border-radius: 0px 45.5729166666667vw 6.51041666666667vw 0px;
+        padding-left: 11.4503816793893vw;
+        padding-right: 11.4503816793893vw;
+
+
+        .element {
+            position: absolute;
+            bottom: -0.7vw;
+            right: -0.3vw;
+        }
+
+        .inner-button {
+            width: 100%;
+            margin-top: 6.36132315521628vw;
+            margin-bottom: 6.36132315521628vw;
+
+            span {
+                width: 67.175572519084vw;
+            }
+        }
+    }
+
+    &:nth-child(even) {
+        border-radius: 45.5729166666667vw 0px 0px 6.51041666666667vw;
+        padding-right: 11.4503816793893vw;
+        padding-left: 11.4503816793893vw;
+
+
+        .element {
+            position: absolute;
+            bottom: -0.7vw;
+            left: -0.3vw;
+        }
+
+        .inner-button {
+            width: 100%;
+            margin-top: 6.36132315521628vw;
+            margin-bottom: 6.36132315521628vw;
+
+            span {
+                width: 67.175572519084vw;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        margin-top: 6.51041666666667vw;
+
+        &:nth-child(odd) {
+            margin-right: 9.765625vw;
+            border-radius: 0px 50.8905852417303vw 12.7226463104326vw 0px;
+            padding-right: unset;
+            padding-left: unset;
+
+            .inner-button {
+                width: 62.6302083333333vw;
+                margin-left: 17.1875vw;
+                margin-top: 4.81770833333333vw;
+                margin-bottom: 4.81770833333333vw;
+
+                span {
+                    width: 57.421875vw;
+                }
+
+            }
+
+            .panel {
+                width: 62.6302083333333vw;
+                margin-left: 17.1875vw;
+            }
+        }
+
+        &:nth-child(even) {
+            margin-left: 9.765625vw;
+            border-radius: 50.8905852417vw 0px 0px 12.7226463104vw;
+            padding-right: unset;
+            padding-left: unset;
+
+            .inner-button {
+                width: 62.6302083333333vw;
+                margin-left: 7.5vw;
+                margin-top: 4.81770833333333vw;
+                margin-bottom: 4.81770833333333vw;
+
+                span {
+                    width: 57.421875vw;
+                }
+
+            }
+
+            .panel {
+                width: 62.6302083333333vw;
+                margin-left: 7.5vw;
+            }
+        }
+    }
+
+    .accordion {
+        background-color: transparent;
+        cursor: pointer;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        transition-delay: .2s;
+        transition-duration: .2s;
+        border-radius: 0px;
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        transition: transform 0s ease;
+        border-top: 0px solid #000;
+
+
+    }
+
+
+    .panel {
+        overflow: hidden;
+        max-height: 0;
+
+        /* Dit zorgt voor de soepele overgang */
+    }
+
+    &.active {
+        transition-duration: .3s;
+
+        .accordion {
+            background-color: transparent;
+            transition: transform 0s ease;
+
+
+        }
+
+        .panel {
+            overflow: hidden;
+            max-height: 1000px;
+            transition: max-height 0s ease-out;
+        }
+    }
+
+
+}
+
+
+.accordion-item {
+    .nonactive-button {
+        display: flex;
+    }
+
+    .active-button {
+        display: none;
+    }
+}
+
+.accordion-item.active {
+    .nonactive-button {
+        display: none;
+    }
+
+    .active-button {
+        display: flex;
+    }
+}

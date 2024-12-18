@@ -1,0 +1,37 @@
+a.button {
+    box-shadow: -2px 3px 0px #291810;
+    height: 7.3027989821883vw;
+    padding-left: 6.36132315521628vw;
+    padding-right: 6.36132315521628vw;
+    background: #F9DC78;
+    border-radius: 999px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    font-size: 4.07124681933842vw;
+    font-weight: 400;
+    font-family: "Quicksand", serif;
+    color: #291810;
+
+    // MD
+    @media (min-width: 768px) {
+        height: 3.87239583333333vw;
+        padding-left: 3.90625vw;
+        padding-right: 3.90625vw;
+        font-size: 2.34375vw;
+    }
+
+    // LG
+    @media (min-width: 1200px) {
+        height: 3.815625vw;
+        padding-left: 3.125vw;
+        padding-right: 3.125vw;
+        font-size: 1.953125vw;
+    }
+
+    &:active {
+        background-color: #F9DC78;
+        box-shadow: none;
+        transform: translateY(4px);
+    }
+}

@@ -28,7 +28,8 @@ module.exports = {
 
     extend: {
       fontFamily: {
-        "tanker": ["Tanker", "sans-serif"],
+        "quicksand": ["Quicksand", "sans-serif"],
+        "gaegu": ["Gaegu", "sans-serif"],
       },
       colors: {
         white: "#FFFFFF",
